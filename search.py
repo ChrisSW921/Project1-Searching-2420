@@ -127,17 +127,17 @@ def main():
 
     print("Searching for a number NOT in the array")
     start1 = time.perf_counter()
-    linear_search(data, 10000000001)
+    linear_search(data, -1)
     end1 = time.perf_counter()
-    print(f"\tLinear search returned {linear_search(data, 10000000001)} in"
+    print(f"\tLinear search returned {linear_search(data, -1)} in"
           f" {end1 - start1} seconds")
     start1 = time.perf_counter()
-    recursive_binary_search(data, 10000000001)
+    recursive_binary_search(data, -1)
     end1 = time.perf_counter()
-    print(f"\tRecursive binary search returned {recursive_binary_search(data, 10000000001)} in"
+    print(f"\tRecursive binary search returned {recursive_binary_search(data, -1)} in"
           f" {end1 - start1} seconds")
     start1 = time.perf_counter()
-    jump_search(data, 10000000001)
+    jump_search(data, -1)
     end1 = time.perf_counter()
-    print(f"\tJump search returned {jump_search(data, 10000000001)} in"
+    print(f"\tJump search returned {jump_search(data, -1)} in"
           f" {end1 - start1} seconds")

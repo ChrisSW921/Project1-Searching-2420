@@ -141,3 +141,7 @@ def main():
     end1 = time.perf_counter()
     print(f"\tJump search returned {jump_search(data, -1)} in"
           f" {end1 - start1} seconds")
+
+
+if __name__ == '__main__':
+    main()
